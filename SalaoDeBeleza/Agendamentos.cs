@@ -11,26 +11,27 @@ namespace SalaoDeBeleza
         public string Funcao { get; set; }
         public int OpcaoFuncao { get; set; }
 
-        public void DadosClientes()
+        public void DadosClientes(int horario)
         {
             Console.Write("Digite seu nome: ");
             Nome = Console.ReadLine();
+            horario = 9;
             if (OpcaoFuncao == 1)
             {
-                Horario = 9 + 1;
+                Horario = horario + 1;
 
             }
             if (OpcaoFuncao == 2)
             {
-                Horario = 9 + 1;
+                Horario = horario + 1;
 
             }
             if (OpcaoFuncao == 3)
             {
-                Horario = 9 + 1;
+                Horario = horario + 1;
 
             }
-            Console.WriteLine("Agendamento feito com sucesso!");
+            Console.WriteLine($"Agendamento feito com sucesso! Seu horário foi marcado para:{Horario}");
         }
 
         public void Agendar()
@@ -51,6 +52,7 @@ namespace SalaoDeBeleza
                     {
                         if (Nome == null)
                         {
+                            Console.clear();
                             disponibilidade = true;
                             DadosClientes();
                             break;
