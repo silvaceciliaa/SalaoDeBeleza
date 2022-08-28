@@ -20,6 +20,7 @@ while (loop) ;
         for (int i = 0; i < clientes.Length; i++)
         {
             clientes[i].Agendar();
+            break;
         }
     }
     if (opcaoMenu1 == "2")
