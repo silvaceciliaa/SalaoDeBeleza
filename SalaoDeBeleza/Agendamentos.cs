@@ -63,8 +63,8 @@ namespace SalaoDeBeleza
                             Console.WriteLine("Não existem horários disponiveis.");
                         }
                     }
-                    break;
                 }
+                    break;
             }
         }
         public  void EscolherFuncao()
