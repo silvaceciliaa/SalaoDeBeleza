@@ -33,21 +33,18 @@
             NomeM = null;
             Horario = 0;
             Console.WriteLine("Dados apagados com sucesso!");
-
         }
         public void LimparDadosS()
         {
             NomeS = null;
             Horario = 0;
             Console.WriteLine("Dados apagados com sucesso!");
-
         }
         public void LimparDadosC()
         {
             NomeC = null;
             Horario = 0;
             Console.WriteLine("Dados apagados com sucesso!");
-
         }
     }
 }
